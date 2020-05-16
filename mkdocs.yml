@@ -1,0 +1,12 @@
+theme:
+  name: 'material'
+  language: 'ja'
+  features:
+    tabs: true
+extra:
+  search:
+    language: 'ja'
+markdown_extensions:
+  - codehilite
+nav:
+  - introduction: introduction.md

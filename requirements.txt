@@ -1,0 +1,2 @@
+###### Requirements with Version Specifiers ######`
+mkdocs-material = 5.1.6
