@@ -17,6 +17,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: check git status/branch
+        run: |
+          git status
+          git branch
+
       # mkdocsを利用するためのpython環境のsetup
       - name: setup python env
         uses: actions/setup-python@v1
