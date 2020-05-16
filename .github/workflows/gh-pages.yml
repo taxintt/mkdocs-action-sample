@@ -34,7 +34,7 @@ jobs:
       - name: mkdocs deploy
         run: |
            git fetch --depth=1 origin master
-           mkdocs gh-deploy
+           mkdocs gh-deploy --config-file mkdocs.yml --force
 
       - name: notify slack
         uses: 8398a7/action-slack@v3
