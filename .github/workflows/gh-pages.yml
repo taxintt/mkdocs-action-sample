@@ -28,13 +28,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: mkdocs build
-        run: mkdocs build     
-
-      - name: mkdocs deploy
+      - name: mkdocs build and deploy
         run: |
-           git fetch --depth=1 origin master
-           mkdocs gh-deploy --config-file mkdocs.yml --force
+           git pull --depth=1 origin master
+           mkdocs gh-deploy --force
 
       - name: notify slack
         uses: 8398a7/action-slack@v3
