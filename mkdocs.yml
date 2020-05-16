@@ -1,3 +1,5 @@
+site_name: study-wiki
+repo_url: https://github.com/TaxiN/study-wiki
 theme:
   name: 'material'
   language: 'ja'
