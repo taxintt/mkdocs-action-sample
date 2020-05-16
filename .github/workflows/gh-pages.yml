@@ -33,8 +33,7 @@ jobs:
 
       - name: mkdocs deploy
         run: |
-           # git fetch --depth=1 origin master
-           git fetch --depth=1 origin gh-pages
+           git fetch --depth=1 origin master
            mkdocs gh-deploy
 
       - name: notify slack
