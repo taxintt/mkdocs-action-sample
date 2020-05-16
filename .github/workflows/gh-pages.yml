@@ -35,7 +35,7 @@ jobs:
 
       - name: mkdocs build and deploy
         run: |
-           git pull --depth=1 origin master
+           git fetch --depth=1 origin master
            mkdocs gh-deploy --force
 
       - name: notify slack
