@@ -11,4 +11,4 @@ extra:
 markdown_extensions:
   - codehilite
 nav:
-  - introduction: introduction.md
+  - self-introduction: introduction.md
