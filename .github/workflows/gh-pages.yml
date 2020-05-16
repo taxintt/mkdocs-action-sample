@@ -1,15 +1,12 @@
 name: Deploy mkdocs
 
 on:
-  push:
-    # work branchの修正をトリガーとして実行する
+  pull_request:
+    # masterへのPRをトリガーとして実行する
     branches:
-      - work
-    paths:
-      - 'docs/*.md'
-      - 'docs/*/*.md'
-      - 'docs/imgs/*'
-      - 'mkdocs.yml'
+      - master
+    types:
+      - closed
 
 jobs:
   deploy:
