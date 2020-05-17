@@ -17,6 +17,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: configure git info
+        run: |
+          git config --global user.name "github-actions-for-deploy"
+          git config --global user.email deploy-actions@github.com
+
       - name: check git status/branch
         run: |
           git status
@@ -35,7 +40,10 @@ jobs:
 
       - name: mkdocs build and deploy
         run: |
-           git fetch --depth=1 origin master
+           remote_repo="https://x-access-token:${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+           git remote rm origin
+           git remote add origin "${remote_repo}"
+           # git fetch --depth=1 origin master
            mkdocs gh-deploy --force
 
       - name: notify slack
