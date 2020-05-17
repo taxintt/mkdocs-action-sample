@@ -1,5 +1,4 @@
 site_name: taxin-pages
-repo_url: https://github.com/TaxiN/study-wiki
 theme:
   name: material
   language: 'ja'
@@ -8,8 +7,6 @@ theme:
 extra:
   search:
     language: 'ja'
-markdown_extensions:
-  - codehilite
 nav:
   - self-introduction: introduction.md
   - other: others.md
