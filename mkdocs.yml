@@ -2,7 +2,7 @@ site_name: taxin-pages
 theme:
   name: material
   language: 'ja'
-  features:
+  feature:
     tabs: true
 extra:
   search:
@@ -10,3 +10,4 @@ extra:
 nav:
   - self-introduction: introduction.md
   - other: others.md
+
