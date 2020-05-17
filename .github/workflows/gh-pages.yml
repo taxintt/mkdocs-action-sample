@@ -44,7 +44,8 @@ jobs:
            git remote rm origin
            git remote add origin "${remote_repo}"
            # git fetch --depth=1 origin master
-           mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --force
+           ls -l "${GITHUB_WORKSPACE}"
+           mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" 
 
       - name: notify slack
         uses: 8398a7/action-slack@v3
