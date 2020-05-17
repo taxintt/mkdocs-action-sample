@@ -1,12 +1,14 @@
 site_name: taxin-pages
 theme:
   name: material
-  language: 'ja'
-  feature:
-    tabs: true
-extra:
-  search:
-    language: 'ja'
+  language: ja
+  features:
+    - tabs
+plugins:
+  - search:
+      lang: 
+        - en
+        - ja
 nav:
   - self-introduction: introduction.md
   - other: others.md
