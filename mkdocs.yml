@@ -1,15 +1,22 @@
 site_name: taxin-pages
+docs_dir: 'docs'
 theme:
-  name: material
-  language: ja
+  name: 'material'
+  language: 'ja'
   features:
     - tabs
+markdown_extensions:
+  - codehilite
+  - footnotes
+  - meta
+  - admonition
+  - plantuml_markdown:
+      server: http://www.planturl.com/planturl
 plugins:
   - search:
-      lang: 
-        - en
-        - ja
+  - git-revision-date-localized
 nav:
-  - self-introduction: introduction.md
-  - other: others.md
+  - はじめに:
+    - self-introduction: introduction.md
+    - other: others.md
 

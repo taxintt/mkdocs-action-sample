@@ -1,4 +1,8 @@
 ###### Requirements ######
 mkdocs
 mkdocs-material
+pymdown-extensions
+fontawesome-markdown
+plantuml-markdown
+mkdocs-git-revision-date-localized-plugin
 
