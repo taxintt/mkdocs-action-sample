@@ -38,20 +38,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: mkdocs build and deploy
+      - name: mkdocs build
         run: |
-           # remote_repo="https://x-access-token:${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-           # git remote rm origin
-           # git remote add origin "${remote_repo}"
-           
            mkdocs build --verbose --clean --strict
            ls -l "${GITHUB_WORKSPACE}"
-           
-           # mkdocs gh-deploy --force --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" 
-           git add ./site/*
-           git commit -m "add gh-pages"
-           git push origin gh-pages --force 
 
+      - name: mkdocs deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+           github_token: ${{ secrets.PERSONAL_TOKEN }}
+           publish_dir: site
+           
       - name: notify slack
         uses: 8398a7/action-slack@v3
         if: always()
