@@ -43,10 +43,15 @@ jobs:
            remote_repo="https://x-access-token:${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
            git remote rm origin
            git remote add origin "${remote_repo}"
-           git pull origin gh-pages
-           # git fetch --depth=1 origin master
+           
+           # git pull origin gh-pages
+           git fetch --depth=1 origin master
+           
            ls -l "${GITHUB_WORKSPACE}"
+           mkdocs build --verbose --clean --strict
+           
            mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" 
+           # git push origin master
 
       - name: notify slack
         uses: 8398a7/action-slack@v3
