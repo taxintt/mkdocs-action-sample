@@ -1,10 +1,12 @@
 site_name: taxin-pages
-docs_dir: 'docs'
 theme:
-  name: 'material'
-  language: 'ja'
+  name: material
+  language: ja
   features:
     - tabs
+  palette:
+    primary: indigo
+    accent: indigo
 markdown_extensions:
   - codehilite
   - footnotes
@@ -12,8 +14,10 @@ markdown_extensions:
   - admonition
   - plantuml_markdown:
       server: http://www.planturl.com/planturl
+extra:
+  search:
+    language: 'ja'
 plugins:
-  - search:
   - git-revision-date-localized
 nav:
   - はじめに:
