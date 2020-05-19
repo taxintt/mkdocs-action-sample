@@ -48,10 +48,14 @@ jobs:
            mkdocs build --verbose --clean --strict
            
            # mkdocs gh-deploy --force --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" 
-           git add /home/runner/work/study-wiki/study-wiki/site/*
-           git commit -m "add gh-pages"
-           git push origin gh-pages --force
+           # git push origin gh-pages --force
 
+      - name: mkdocs deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+           github_token: ${{ secrets.PERSONAL_TOKEN }}
+           publish_dir: /home/runner/work/study-wiki/study-wiki/site
+           
       - name: notify slack
         uses: 8398a7/action-slack@v3
         if: always()
