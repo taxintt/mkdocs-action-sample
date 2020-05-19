@@ -17,6 +17,6 @@ plugins:
   - git-revision-date-localized
 nav:
   - はじめに:
-    - self-introduction: introduction.md
-    - other: others.md
+    - introduction: introduction.md
+    - links: others.md
 
