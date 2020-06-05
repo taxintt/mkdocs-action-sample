@@ -1,4 +1,10 @@
 # $ whoami
-- Name: [@taxin](https://github.com/TaxiN)
-- Age: 25
-- Skills: AWS, Kubernetes, Python
+## Name
+[@taxin](https://github.com/TaxiN)
+
+## Skills
+- AWS
+- GCP
+- Kubernetes
+- Fluentd
+- Python
