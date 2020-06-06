@@ -2,7 +2,7 @@ name: Deploy mkdocs
 
 on:
   pull_request:
-    # masterへのPRをトリガーとして実行する
+    # PRのcloseをトリガーとしてjobを実行する
     branches:
       - master
     types:
@@ -27,7 +27,7 @@ jobs:
           git status
           git branch
 
-      # mkdocsを利用するためのpython環境のsetup
+      # mkdocsを利用するためのpython環境のセットアップ
       - name: setup python env
         uses: actions/setup-python@v1
         with:
@@ -38,17 +38,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # ドキュメントの作成
       - name: mkdocs build
         run: |
            mkdocs build --verbose --clean --strict
-           ls -l "${GITHUB_WORKSPACE}"
 
+      # ドキュメントのデプロイ
       - name: mkdocs deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
            github_token: ${{ secrets.PERSONAL_TOKEN }}
            publish_dir: site
            
+      # Slackでの通知
       - name: notify slack
         uses: 8398a7/action-slack@v3
         if: always()
