@@ -20,6 +20,7 @@ extra:
 plugins:
   - git-revision-date-localized
 nav:
-  - test:
-    - test1: index.md
+  - home: index.md
+  - About:
+      - introduction: introduction.md
 
