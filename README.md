@@ -1,4 +1,7 @@
 # study-wiki
 
 ## Abstract
-This is a sample of Github Actions for deploying mkdocs document.
+This is a sample repository for deploying document(mkdocs).
+
+## Tools
+- 

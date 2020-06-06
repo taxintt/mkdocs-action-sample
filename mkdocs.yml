@@ -20,8 +20,6 @@ extra:
 plugins:
   - git-revision-date-localized
 nav:
-  - はじめに:
-    - top: index.md
-    - introduction: introduction.md
-    - links: others.md
+  - test:
+    - test1: index.md
 
