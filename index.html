@@ -15,7 +15,7 @@
     
     
       
-        <title>taxin-pages</title>
+        <title>Top - taxin-pages</title>
       
     
     
@@ -99,27 +99,19 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
-      
-        
-  <li class="md-tabs__item">
-    
-      <a href="." class="md-tabs__link md-tabs__link--active">
-        Top
-      </a>
-    
-  </li>
-
       
         
   
   
     <li class="md-tabs__item">
       
-        <a href="about/hint-plantuml/" class="md-tabs__link">
-          Hint
+        <a href="." class="md-tabs__link md-tabs__link--active">
+          Home
         </a>
       
     </li>
@@ -127,6 +119,17 @@
 
       
         
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="design/architecture/" class="md-tabs__link">
+          Guides
+        </a>
+      
+    </li>
+  
+
       
     </ul>
   </div>
@@ -160,6 +163,33 @@
   
 
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Home" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
@@ -171,24 +201,24 @@
     
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-1-2">
       Hint
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="Hint" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+    <nav class="md-nav" aria-label="Hint" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -213,16 +243,63 @@
     </nav>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
     <a href="about/document-build/" title="Build configuration" class="md-nav__link">
       Build configuration
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Guides
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Guides" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="design/architecture/" title="architecture" class="md-nav__link">
+      architecture
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
