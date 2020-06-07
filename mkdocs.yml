@@ -20,8 +20,11 @@ extra:
 plugins:
   - git-revision-date-localized
 nav:
-  - Top: index.md
-  - Hint:
-    - plantUML: about/hint-plantuml.md
-  - Build configuration: about/document-build.md
+  - Home:
+    - Top: index.md
+    - Hint:
+      - plantUML: about/hint-plantuml.md
+    - Build configuration: about/document-build.md
+  - Guides:
+    - architecture: design/architecture.md
 
